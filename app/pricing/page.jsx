@@ -1,7 +1,7 @@
 
 const page = () => {
   return (
-    <div className="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-20 lg:py-24">
+    <div className="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-20 lg:py-24 lg:ml-[70px]">
         <h1 className="text-3xl font-extrabold text-center sm:text-4xl mb-11">Check out the Pro Plans: </h1>
   <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:items-stretch md:grid-cols-3 md:gap-8">
     <div className="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-sm">

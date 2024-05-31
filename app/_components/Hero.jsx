@@ -46,14 +46,14 @@ const Hero = () => {
       <div className="mt-8 flex flex-wrap justify-center gap-4">
         <a
           className="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-blue-700 focus:outline-none focus:ring active:text-opacity-75 sm:w-auto"
-          href="#"
+          href="/login"
         >
           Get Started
         </a>
 
         <a
           className="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-black hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
-          href="#"
+          href="/courses"
         >
           Learn More <AiOutlineArrowRight className="inline-block"/>
         </a>
