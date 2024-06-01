@@ -1,7 +1,6 @@
 
 const ProductCard = ({ title, imgpath ,price }) => {
   return (
-    <a href="#" className="group relative block overflow-hidden">
         <div className='lg:w-96 p-2'>
   <button
     className="absolute end-4 top-4 z-10 rounded-full bg-white p-1.5 text-gray-900 transition hover:text-gray-900/75"
@@ -46,7 +45,6 @@ const ProductCard = ({ title, imgpath ,price }) => {
     </form>
   </div>
   </div>
-</a>
   )
 }
 
