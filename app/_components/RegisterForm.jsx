@@ -23,7 +23,6 @@ const RegisterForm = () => {
   };
 
   const handleSubmit = async (e) => {
-    console.log("Submitting form:", form);
     e.preventDefault();
     if(e.target.password.value !== e.target.password_confirmation.value) {
       toast.error("Password and password confirmation do not match");
@@ -39,15 +38,15 @@ const RegisterForm = () => {
       });
 
       if (!res.ok) {
-        throw new Error("Failed to create an account");
+        const message = res.body ? await res.text() : "";
+        toast.error(message || "An error occurred while creating the account");
+        return;
       }
 
       const data = await res.json();
       toast.success("Account created successfully");
-      console.log(data);
     } catch (error) {
-      console.error(error);
-      toast.error("Failed to create an account");
+      toast.error(error.message);
     }
   };
 

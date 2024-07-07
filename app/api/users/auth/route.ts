@@ -10,7 +10,7 @@ export async function POST(req: Request) {
     const { email, password } = await req.json();
 
     if (!email || !password) {
-      return new Response("Please provide both email and password", {
+      return new Response("please provide both email and password", {
         status: 400,
       });
     }
@@ -20,15 +20,15 @@ export async function POST(req: Request) {
     });
 
     if (!user) {
-      return new Response("User not found", {
+      return new Response("user not found", {
         status: 404,
-      });
+      })
     }
 
     const isPasswordValid = await bcrypt.compare(password, user.pass);
 
     if (!isPasswordValid) {
-      return new Response("Invalid credentials", {
+      return new Response("invalid credentials", {
         status: 401,
       });
     }
@@ -46,7 +46,7 @@ export async function POST(req: Request) {
     });
   } catch (error) {
     console.error(error);
-    return new Response(`Internal Server Error: ${error.message}`, {
+    return new Response(`internal server error: ${error.message}`, {
       status: 500,
     });
   }

@@ -31,11 +31,9 @@ const LoginForm = () => {
       if (!res.ok) {
         const error = await res.text();
         toast.error(`Failed to authenticate user: ${error}`);
-        throw new Error(error);
+        return;
       }
-      const data = await res.json();
       toast.success("Authenticated successfully");
-      console.log(data);
     } catch (error) {
       console.error(error);
       toast.error("An unexpected error occurred");
