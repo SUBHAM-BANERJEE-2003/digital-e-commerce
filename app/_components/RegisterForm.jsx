@@ -52,7 +52,7 @@ const RegisterForm = () => {
 
   return (
     <div>
-      <section className="bg-white mt-10">
+      <section className="mt-10">
         <div className="lg:grid lg:min-h-screen lg:grid-cols-12">
           <section className="relative flex h-32 items-end bg-gray-900 lg:col-span-5 lg:h-full xl:col-span-6">
             <img
@@ -86,7 +86,7 @@ const RegisterForm = () => {
                   <img src="logo.svg" alt="Logo" />
                 </a>
 
-                <h1 className="mt-2 text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl">
+                <h1 className="mt-2 text-2xl font-bold sm:text-3xl md:text-4xl">
                   Welcome to NextGen Courses 🚀
                 </h1>
 

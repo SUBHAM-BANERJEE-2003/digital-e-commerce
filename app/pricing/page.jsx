@@ -6,7 +6,7 @@ const page = () => {
   <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:items-stretch md:grid-cols-3 md:gap-8">
     <div className="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-sm">
       <div className="p-6 sm:px-8">
-        <h2 className="text-lg font-medium text-gray-900">
+        <h2 className="text-lg font-medium">
           Starter
           <span className="sr-only">Plan</span>
         </h2>
@@ -14,7 +14,7 @@ const page = () => {
         <p className="mt-2 text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
         <p className="mt-2 sm:mt-4">
-          <strong className="text-3xl font-bold text-gray-900 sm:text-4xl"> 20$ </strong>
+          <strong className="text-3xl font-bold sm:text-4xl"> 20$ </strong>
 
           <span className="text-sm font-medium text-gray-700">/month</span>
         </p>
@@ -28,7 +28,7 @@ const page = () => {
       </div>
 
       <div className="p-6 sm:px-8">
-        <p className="text-lg font-medium text-gray-900 sm:text-xl">What's included:</p>
+        <p className="text-lg font-medium sm:text-xl">What's included:</p>
 
         <ul className="mt-2 space-y-2 sm:mt-4">
           <li className="flex items-center gap-1">
@@ -126,7 +126,7 @@ const page = () => {
 
     <div className="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-sm">
       <div className="p-6 sm:px-8">
-        <h2 className="text-lg font-medium text-gray-900">
+        <h2 className="text-lg font-medium">
           Pro
           <span className="sr-only">Plan</span>
         </h2>
@@ -134,7 +134,7 @@ const page = () => {
         <p className="mt-2 text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
         <p className="mt-2 sm:mt-4">
-          <strong className="text-3xl font-bold text-gray-900 sm:text-4xl"> 30$ </strong>
+          <strong className="text-3xl font-bold sm:text-4xl"> 30$ </strong>
 
           <span className="text-sm font-medium text-gray-700">/month</span>
         </p>
@@ -148,7 +148,7 @@ const page = () => {
       </div>
 
       <div className="p-6 sm:px-8">
-        <p className="text-lg font-medium text-gray-900 sm:text-xl">What's included:</p>
+        <p className="text-lg font-medium sm:text-xl">What's included:</p>
 
         <ul className="mt-2 space-y-2 sm:mt-4">
           <li className="flex items-center gap-1">
@@ -246,7 +246,7 @@ const page = () => {
 
     <div className="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-sm">
       <div className="p-6 sm:px-8">
-        <h2 className="text-lg font-medium text-gray-900">
+        <h2 className="text-lg font-medium">
           Enterprise
           <span className="sr-only">Plan</span>
         </h2>
@@ -254,7 +254,7 @@ const page = () => {
         <p className="mt-2 text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
         <p className="mt-2 sm:mt-4">
-          <strong className="text-3xl font-bold text-gray-900 sm:text-4xl"> 100$ </strong>
+          <strong className="text-3xl font-bold sm:text-4xl"> 100$ </strong>
 
           <span className="text-sm font-medium text-gray-700">/month</span>
         </p>
@@ -268,7 +268,7 @@ const page = () => {
       </div>
 
       <div className="p-6 sm:px-8">
-        <p className="text-lg font-medium text-gray-900 sm:text-xl">What's included:</p>
+        <p className="text-lg font-medium sm:text-xl">What's included:</p>
 
         <ul className="mt-2 space-y-2 sm:mt-4">
           <li className="flex items-center gap-1">

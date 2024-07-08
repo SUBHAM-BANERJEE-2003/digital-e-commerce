@@ -3,7 +3,7 @@ const ProductCard = ({ title, imgpath ,price }) => {
   return (
         <div className='lg:w-96 p-2'>
   <button
-    className="absolute end-4 top-4 z-10 rounded-full bg-white p-1.5 text-gray-900 transition hover:text-gray-900/75"
+    className="absolute end-4 top-4 z-10 rounded-full p-1.5 text-gray-900 transition hover:text-gray-900/75"
   >
     <span className="sr-only">Wishlist</span>
 
@@ -29,12 +29,12 @@ const ProductCard = ({ title, imgpath ,price }) => {
     className="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"
   />
 
-  <div className="relative border border-gray-100 bg-white p-6">
+  <div className="relative border border-gray-100 p-6">
     <span className="whitespace-nowrap bg-yellow-400 px-3 py-1.5 text-xs font-medium"> New </span>
 
-    <h3 className="mt-4 text-lg font-medium text-gray-900">{ title }</h3>
+    <h3 className="mt-4 text-lg font-medium">{ title }</h3>
 
-    <p className="mt-1.5 text-sm text-gray-700">{ price }</p>
+    <p className="mt-1.5 text-sm">{ price }</p>
 
     <form className="mt-4">
       <button

@@ -52,14 +52,14 @@ const Hero = () => {
         </a>
 
         <a
-          className="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-black hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
+          className="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-blue-600 hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
           href="/courses"
         >
           Learn More <AiOutlineArrowRight className="inline-block"/>
         </a>
       </div>
   <div className="mx-auto max-w-screen-xl px-4 mt-20">
-        <h2 className="text-3xl font-bold text-center">Why Choose Us?</h2>
+        <h2 className="text-3xl font-bold text-center text-green-500">Why Choose Us?</h2>
         <p className="mt-4 max-w-2xl mx-auto text-center text-gray-600">Our platform is designed to meet your learning needs. With our subscription, you get access to unlimited courses, hands-on projects and certificates.</p>
         <div className="mt-12 grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4">
             {perks.map((perk, index) => (
@@ -67,7 +67,9 @@ const Hero = () => {
                     <div className="p-4 bg-white rounded-full shadow-lg">
                         {perk.icon}
                     </div>
-                    <h3 className="text-xl font-bold">{perk.title}</h3>
+                    <h3 className="text-xl font-bold text-green-500">
+                      {perk.title}
+                    </h3>
                     <p className="text-center text-gray-600">{perk.description}</p>
                 </div>
             ))}

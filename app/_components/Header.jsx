@@ -2,6 +2,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import dynamic from 'next/dynamic'
+ 
+const ThemeSwitch = dynamic(() => import('../_components/ThemeSwitch'), { ssr: false })
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +20,7 @@ function Header() {
     setIsOpen(!isOpen);
   };
   return (
-    <header className="bg-white  p-2 shadow-lg">
+    <header className="p-2 shadow-lg">
   <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 ">
     <div className="flex h-16 items-center justify-between">
       <div className="md:flex md:items-center md:gap-12">
@@ -79,6 +82,7 @@ function Header() {
               Register
             </Link>
           </div>
+          <ThemeSwitch />
         </div>
 
         <div className="block md:hidden">
@@ -99,11 +103,11 @@ function Header() {
       </div>
       </div>
       <div className={`md:flex ${isOpen ? "block" : "hidden"}`}>
-            <nav aria-label="Global" className="bg-white  p-2">
+            <nav aria-label="Global" className="p-2">
               <ul className="flex flex-col md:flex-row items-center gap-6 text-sm lg:hidden">
                 {navitems.map((item, index) => (
                   <li key={index}>
-                    <Link href={item.path} className="text-gray-500 transition hover:text-gray-500/75">
+                    <Link href={item.path} className="transition hover:text-gray-500/75">
                       {item.title}
                     </Link>
                   </li>

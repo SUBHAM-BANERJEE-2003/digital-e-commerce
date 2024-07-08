@@ -3,7 +3,7 @@ import Image from 'next/image'
 const Footer = () => {
   return (
     <div className='bottom-0 z-10 mt-52 mb-0 border-t-slate-300 border p-3'>
-    <footer className="bg-white">
+    <footer className="">
   <div className="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
     <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
       <div>
@@ -113,7 +113,7 @@ const Footer = () => {
 
       <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
         <div>
-          <p className="font-medium text-gray-900">Services</p>
+          <p className="font-medium">Services</p>
 
           <ul className="mt-6 space-y-4 text-sm">
             <li>
@@ -139,7 +139,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <p className="font-medium text-gray-900">Company</p>
+          <p className="font-medium">Company</p>
 
           <ul className="mt-6 space-y-4 text-sm">
             <li>
@@ -157,7 +157,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <p className="font-medium text-gray-900">Helpful Links</p>
+          <p className="font-medium">Helpful Links</p>
 
           <ul className="mt-6 space-y-4 text-sm">
             <li>
@@ -175,7 +175,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <p className="font-medium text-gray-900">Legal</p>
+          <p className="font-medium">Legal</p>
 
           <ul className="mt-6 space-y-4 text-sm">
             <li>
